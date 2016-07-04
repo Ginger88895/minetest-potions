@@ -78,5 +78,6 @@ potions.register_arrow = function(potion_name, name, hname, potion_use_funct, de
 		}
 	})
 	
-	arrows[#arrows+1] = {potion_name.."_arrow", potion_name.."_arrow_entity"}
+	if arrows~=nil then arrows[#arrows+1] = {potion_name.."_arrow", potion_name.."_arrow_entity"} end
+	if throwing_arrows~=nil then throwing_arrows[#throwing_arrows+1] = {potion_name.."_arrow", potion_name.."_arrow_entity"} end
 end
